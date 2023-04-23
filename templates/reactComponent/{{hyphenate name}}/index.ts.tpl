@@ -1,0 +1,1 @@
+export { {{hyphenate name}} } from './{{hyphenate name}}.tsx';
