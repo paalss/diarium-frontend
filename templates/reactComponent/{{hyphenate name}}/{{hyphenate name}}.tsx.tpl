@@ -1,6 +1,10 @@
-import classes from '{{hyphenate name}}.module.css';
+import classes from './{{hyphenate name}}.module.css';
 
-const {{hyphenate name}} = () => {
+interface {{hyphenate name}}Props {
+
+};
+
+const {{hyphenate name}} = ({}: {{hyphenate name}}Props) => {
     return (
         <div className={classes.root}></div>
     )
