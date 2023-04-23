@@ -19,3 +19,9 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 ```bash
 npx prettier --write .
 ```
+
+## Create component
+
+```bash
+npm run generate reactComponent ./src/components
+```
