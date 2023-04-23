@@ -1,0 +1,12 @@
+.root ul {
+  list-style-type: none;
+}
+
+.root li {
+    margin-bottom: 40px;
+}
+
+.root h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}

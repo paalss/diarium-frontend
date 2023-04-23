@@ -2,6 +2,11 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import styles from '@/styles/Home.module.css';
+import { List } from '@/components/List';
+
+import * as data from '../../journal-entries/Diarium_2022-01-01_2022-12-31/Diarium_2022-01-01_2022-12-31.json';
+
+const dataArray = Array.from(data)
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,7 +20,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main className={`${styles.main} ${inter.className}`}>
-                
+                <List entries={dataArray} />
             </main>
         </>
     );
