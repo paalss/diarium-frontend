@@ -6,7 +6,8 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "next lint"
+        "lint": "next lint",
+        "generate": "ft"
     },
     "dependencies": {
         "@types/node": "18.16.0",
@@ -20,6 +21,7 @@
         "typescript": "5.0.4"
     },
     "devDependencies": {
+        "folder-template": "^0.1.4",
         "prettier": "2.8.8"
     }
 }
