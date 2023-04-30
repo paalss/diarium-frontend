@@ -1,6 +1,9 @@
+// import ReactList from 'react-list';
+// import LazyLoading from 'react-list-lazy-load';
 import classes from './List.module.css';
+import { ListItem } from '../ListItem';
 
-type entry = {
+export type entry = {
     date: string;
     heading: string;
     html: string;
@@ -18,24 +21,7 @@ const List = ({ entries }: ListProps) => {
             <ul>
                 {entries.map((entry) => {
                     return (
-                        <li key={entry.date}>
-                            <h2>{entry.heading}</h2>
-                            <p>
-                                {entry.date}
-
-                                {entry.tags.length >= 1 ? (
-                                    <>
-                                        {' '}
-                                        - Tags:{' '}
-                                        {entry.tags.map((tag) => (
-                                            <span key={tag}>{tag} </span>
-                                        ))}
-                                    </>
-                                ) : (
-                                    <> - No tags</>
-                                )}
-                            </p>
-                        </li>
+                        <ListItem entry={entry} key={entry.date}/>
                     );
                 })}
             </ul>
