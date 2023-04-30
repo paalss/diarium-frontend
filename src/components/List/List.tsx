@@ -28,7 +28,7 @@ const List = ({ entries }: ListProps) => {
                                         {' '}
                                         - Tags:{' '}
                                         {entry.tags.map((tag) => (
-                                            <>{tag} </>
+                                            <span key={tag}>{tag} </span>
                                         ))}
                                     </>
                                 ) : (
