@@ -4,9 +4,6 @@ del opp med overskrifter som viser: Februar, mars, april. Alle måneder.
 sett inn bilder ved siden av listelement
 lag post detaljer-komponent
 
-
-
-
 - tanstack?
 - https://blog.logrocket.com/render-large-lists-react-5-methods-examples/
   - npm i react-paginate
