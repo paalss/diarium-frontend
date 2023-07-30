@@ -21,7 +21,7 @@ const List = ({ entries }: ListProps) => {
             <ul>
                 {entries.map((entry) => {
                     return (
-                        <ListItem entry={entry} key={entry.date}/>
+                        <ListItem entry={entry} key={entry.date} />
                     );
                 })}
             </ul>
