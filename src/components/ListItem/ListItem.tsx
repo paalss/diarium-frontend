@@ -6,17 +6,23 @@ interface ListItemProps {
 }
 
 const ListItem = ({ entry }: ListItemProps) => {
+    const { heading, date, tags, html, tracker } = entry
+
+    const unixTimestamp: number = Date.parse(date)
+    const event = new Date(unixTimestamp)
+    const postDate = event.toLocaleDateString("no", { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+
     return (
         <li className={classes.root}>
-            <h2>{entry.heading}</h2>
+            <h2>{heading}</h2>
             <p>
-                {entry.date}
+                {postDate}
 
-                {entry.tags.length >= 1 ? (
+                {tags.length >= 1 ? (
                     <>
                         {' '}
                         - Tags:{' '}
-                        {entry.tags.map((tag) => (
+                        {tags.map((tag) => (
                             <span key={tag}>{tag} </span>
                         ))}
                     </>
